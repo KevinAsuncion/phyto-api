@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: H+N888yG+TQl9Mtbe5yLka4kMDejeIAsg26qsW7n2yf03vd5iPVeHLAQAtG3t8ps3E0uFS3B+lk7OY3fkRoZmdJDIQ1VCE2qxleDWlzdosmZ+2V5sC4EgasupgZOjwCFkZxo1KVrxpfVS85fNSAvAMFvFDJ4AixgVC1lPM4LfrVICz70J6RVWAUkY+nR7EstT5jEEPDpbFn7mXTbTp+MPFGYTltreTtdwlbyVi+WvIspKGCVlDVcTpxDdMW7hNbc8cu/xWvK68o6ModUKqYO41K3l50Z4fLoadfKUxwfqlUbCi77OByJbowDlRLVtBX7p92a1Ol76azxTwLW2TCYjT8nO2vrDoEHpKTyEQh0xU9Mc0+ia9AEMH5hacwkxTpCP0LwNZITDwqZUJZB6nx50Zukhbt2RJsB787baeUR4wlogH104LHowMyZF3TXO+y8AXHrDyXbeiqHJd6R5JchNgiowY0o2TmQM0UUPQbDYmkDfa10l96ACbLUHIHlByAUcCb5PSxtoEDJGpzL+coFuaZWap3aYmNHq/Xl1ZZTTOxw/aw3+dm9Y9zHeou2VEiSpXmcwQ1RRNdBAyqwx/Qa7n2qQhhV+HHBEqTQ5PcqqoHg2EjRo+grxIYZJgFx/ptoLrJiTvQ7Fcj1oVJmKDAe+p9n0JVlzxzpF5YxHnk+1As=
+  app: afternoon-inlet-27970
+  on:
+    repo: KevinAsuncion/phyto-api
