@@ -108,7 +108,7 @@ describe('Auth endpoints', function () {
                 'wrongSecret',
                 {
                     algorithm: 'HS256',
-                    expiresIn: '30d'
+                    expiresIn: '7d'
                 }
             );
 
