@@ -17,8 +17,7 @@ const router = express.Router();
 
 const jwtAuth = passport.authenticate('jwt', { session: false });
 
-
-// Get the favorite recipes of a specific user
+//Get the favorite recipes of a specific user
 router.get('/', jwtAuth, (req, res) => {
     User
         .findOne({ username: req.user.username })
@@ -37,7 +36,6 @@ router.get('/', jwtAuth, (req, res) => {
             res.status(500).json({ message: 'Internal server error' });
         });
 });
-
 
 //Create a new favorite recipe 
 router.post('/', jwtAuth, jsonParser, (req, res) => {
