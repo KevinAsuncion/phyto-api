@@ -13,7 +13,7 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 
 describe('Auth endpoints', function () {
-    const fullname = 'examplefullname';
+    const fullname = '';
     const username = 'exampleUser';
     const password = 'examplePass';
 
@@ -156,7 +156,7 @@ describe('Auth endpoints', function () {
                 {
                     algorithm: 'HS256',
                     subject: username,
-                    expiresIn: '30d'
+                    expiresIn: '7d'
                 }
             );
             const decoded = jwt.decode(token);
