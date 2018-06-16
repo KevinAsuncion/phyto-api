@@ -61,7 +61,7 @@ describe('Recipes API', function () {
     });
 
     beforeEach(function () {
-        return seedEntryData();
+        return seedRecipeData();
     });
 
     afterEach(function () {
