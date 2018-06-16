@@ -207,7 +207,7 @@ describe('Recipes API', function () {
                 })
                 .then(res => {
                     expect(res).to.have.status(204);
-                    return Recipe.findById(entry.id);
+                    return Recipe.findById(recipe.id);
                 })
                 .then(_recipe => { 
                     expect(_recipe).to.be.null;
