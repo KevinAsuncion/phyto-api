@@ -54,9 +54,11 @@ app.get('/api/*', (req, res) => {
 
 const { router: usersRouter } = require('./users/router');
 const { router: authRouter } = require('./auth/router');
+const { router: recipesRouter } = require('./recipes/router');
 
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
+app.use('/recipes', recipesRouter);
 
 app.use('*', (req, res) => {
     res.status(404).json({ message: 'Not Found' });

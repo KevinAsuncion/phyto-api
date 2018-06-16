@@ -18,15 +18,7 @@ const UserSchema = mongoose.Schema({
     fullname: {
         type: String, 
         required: true
-    },
-    favoriteRecipes: [
-        {
-            recipe_url: String, 
-            title: String, 
-            image_url: String
-        }
-    ]
-
+    }
 })
 
 UserSchema.methods.serialize = function(){

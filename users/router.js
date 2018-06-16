@@ -115,6 +115,4 @@ router.post('/', jsonParser, (req, res) => {
         });
 });
 
-//TODO  - get router - get favorite recipes from user 
-
 module.exports = { router };
