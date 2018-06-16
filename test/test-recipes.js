@@ -21,7 +21,7 @@ function seedRecipeData() {
         seedData.push({
             image_url: faker.image.imageUrl(),
             title: faker.lorem.words(),
-            recipe_url: faker.lorem.url()
+            recipe_url: faker.internet.url()
         });
     }
     return Recipe.insertMany(seedData);
@@ -161,7 +161,7 @@ describe('Recipes API', function () {
             const newRecipe = {
                 image_url: faker.image.imageUrl(),
                 title: faker.lorem.words(),
-                recipe_url: faker.lorem.url(),
+                recipe_url: faker.internet.url(),
             }
             return chai
                 .request(app)
