@@ -13,7 +13,7 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 
 describe('Auth endpoints', function () {
-    const fullname = '';
+    const fullname = 'examplefullname';
     const username = 'exampleUser';
     const password = 'examplePass';
 
@@ -83,7 +83,7 @@ describe('Auth endpoints', function () {
                         algorithm: ['HS256']
                     });
                     expect(payload.user).to.deep.equal({
-                        fullname: '',
+                        fullname,
                         id: payload.user.id,
                         username
                     });
