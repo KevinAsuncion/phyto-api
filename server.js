@@ -26,8 +26,6 @@ passport.use(jwtStrategy);
 
 const jwtAuth = passport.authenticate('jwt', { session: false });
 
-const app = express();
-
 app.use(morgan('common'));
 app.use(express.static('public'));
 
