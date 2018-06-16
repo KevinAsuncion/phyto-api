@@ -28,6 +28,7 @@ describe('Auth endpoints', function () {
     beforeEach(function () {
         return User.hashPassword(password).then(password =>
             User.create({
+                fullname,
                 username,
                 password,
             })
