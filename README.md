@@ -9,13 +9,12 @@ Username:  demouser
 Password:  demopassword
 
 # Technology 
-<ul>
-    <li>Node.js + Express.js</li>
-    <li>MongoDB</li>
-    <li>Mongoose </li>
-    <li>Mocha + Chai </li>
-    <li>Travis CI</li>
-    <li>JWT Authentication</li>
-    <li>Bcrypt</li>
-    <li>Passport</li>
-</ul>
+*Node.js
+*Express.js
+*MongoDB
+*Mongoose
+*Mocha + Chai 
+*Travis CI
+*JWT Authentication
+*Bcrypt
+*Passport
